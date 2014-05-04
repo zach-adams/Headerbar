@@ -21,7 +21,7 @@ Here is complete tutorial of Firefox GNOME integration
         
         @-moz-document url("chrome://browser/content/browser.xul") {
         
-        :-moz-any(
+            :-moz-any(
                 #main-window[htitlemode="always"],
                 #main-window:not([sizemode="normal"])[htitlemode="auto"],
                 #main-window:not([sizemode="normal"])[htitlemode="legacy"]
