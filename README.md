@@ -17,13 +17,22 @@ Here is complete tutorial of Firefox GNOME integration
 
 3. Go to "User Styles" section of <code>about:addons</code>, select "Write New Style" button pick some name and paste userstyle below and click "Save" button.
 
-        @-moz-document url(chrome://browser/content/browser.xul) {
-    
-            #nav-bar {
-                background-image: -moz-linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)) !important;
+        @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+        
+        @-moz-document url("chrome://browser/content/browser.xul") {
+        
+        :-moz-any(
+                #main-window[htitlemode="always"],
+                #main-window:not([sizemode="normal"])[htitlemode="auto"],
+                #main-window:not([sizemode="normal"])[htitlemode="legacy"]
+            ) #toolbar-menubar:not(:-moz-lwtheme) {
+                -moz-appearance: none;
             }
-    
-            /* Bigger paddings for better dragging experience */
+        
+            #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme),
+            #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) {
+                background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) 37px);
+            }
         
             #navigator-toolbox:not([tabsontop="true"]) #nav-bar {
                 padding: 3px 3px 6px 3px !important;
