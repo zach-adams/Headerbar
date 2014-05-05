@@ -34,11 +34,13 @@ Here is complete tutorial of Firefox GNOME integration
         background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) 37px);
     }
 
-    #navigator-toolbox:not([tabsontop="true"]) #nav-bar {
+    #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
+    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
         padding: 3px 3px 6px 3px !important;
     }
 
-    #urlbar {
+    #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #urlbar,
+    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #urlbar {
         margin: 0 36px !important;
     }
 }
