@@ -46,6 +46,6 @@ Here is complete tutorial of Firefox GNOME integration
 }
 ```
 
-4. Press "Download ZIP" on the right of this page, copy "Headerbar-master" folder from downloaded archive into <code>~/.local/share/themes/</code> - if this folder does not exist - create it
+4. Press "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if this folder does not exist - create it
 
-5. Switch window theme to "Headerbar-master" using GNOME Tweak Tool
+5. Switch window theme to "Headerbar"(GNOME 3.x-alike) or "Headerbar-new"(GNOME 3.1x-alike) using GNOME Tweak Tool
