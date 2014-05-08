@@ -15,7 +15,7 @@ Here is complete tutorial of Firefox GNOME integration
 
 ![Screenshot of Theme Tweak options](Theme Tweak.png)
 
-3. Go to "User Styles" section of <code>about:addons</code>, select "Write New Style" button pick some name and paste userstyle below and click "Save" button.
+3. Go to "User Styles" section of <code>about:addons</code>, select "Write New Style" button, pick a name and paste userstyle below, then click "Save" button.
 ```css
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
