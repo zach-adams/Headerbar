@@ -10,7 +10,7 @@ Here is complete tutorial of Firefox GNOME integration
  * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - for native notifications
  * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) - for applying userstyle below
  * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/)(optionally) - for hiding unnecessary items in the bookmarks menu
- * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/)(optionally) - for dark theme
+ * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/)(incomplete) - for dark theme (needs [beta vesion of GNOME 3 theme for Firefox](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases/))
 
 2. Restart your browser, go to <code>about:addons</code>, find GNOME Theme Tweak options and enable options you like, find HTitle options and select hide titlebar "Always" option
 
