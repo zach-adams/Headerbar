@@ -3,13 +3,14 @@
 Here is complete tutorial of Firefox GNOME integration
 
 1. Install all software from this list(don't restart after installing each one):
- * [GNOME 3 theme for Firefox](https://addons.mozilla.org/firefox/addon/adwaita/), or if you can't wait for 3.12-style tabs - use [beta](https://github.com/gnome-integration-team/firefox-gnome/issues/241)
+ * [GNOME 3 theme for Firefox](https://addons.mozilla.org/firefox/addon/adwaita/)
  * [GNOME 3 Theme Tweak extension](https://addons.mozilla.org/firefox/addon/gnome-theme-tweak/)
  * [Hide Tab Bar With One Tab](https://addons.mozilla.org/en-US/firefox/addon/hide-tab-bar-with-one-tab/)
  * [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) - for hiding titlebar
  * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - for native notifications
- * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) - for adjusting userstyles
+ * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) - for applying userstyle below
  * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/)(optionally) - for hiding unnecessary items in the bookmarks menu
+ * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/)(optionally) - for dark theme
 
 2. Restart your browser, go to <code>about:addons</code>, find GNOME Theme Tweak options and enable options you like, find HTitle options and select hide titlebar "Always" option
 
@@ -31,7 +32,12 @@ Here is complete tutorial of Firefox GNOME integration
 
     #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme),
     #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) {
-        background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0) 37px);
+        background-image: linear-gradient(to bottom, #ffffff, #ededed 37px);
+    }
+
+    #main-window[darkwdec="true"]:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme),
+    #main-window[darkwdec="true"]:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme){
+        background-image: linear-gradient(to bottom, #4e5a5a, #363b3b 37px);
     }
 
     #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
