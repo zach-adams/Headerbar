@@ -2,14 +2,14 @@
 
 Here is complete tutorial of Firefox GNOME integration
 
-1. Essential
+## Essential
 
  * [GNOME theme](https://addons.mozilla.org/firefox/addon/adwaita/)
  * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - native desktop notifications
 
 ![Screenshot with essential setup](screenshots/screenshot-essential.png)
 
-2. Complete
+## Complete
 
  * [GNOME Theme Tweak](https://addons.mozilla.org/firefox/addon/gnome-theme-tweak/) - additional theme options
  * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/) - hide unnecessary items in the bookmarks menu
@@ -18,11 +18,11 @@ Here is complete tutorial of Firefox GNOME integration
 
 ![Screenshot with recommended setup](screenshots/screenshot-complete.png)
 
-3. Headerbar
+## Headerbar
 
  * [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) - hide window titlebar
  * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) and this [userstyle](https://userstyles.org/styles/91417/)
- * Select "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if this folder does not exist - create it
+ * Select "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if folder does not exist - create it
  * Switch window theme to "Headerbar"(GNOME 3.x-alike) or "Headerbar-new"(GNOME 3.1x-alike) using GNOME Tweak Tool
 
 ![Screenshot with advanced setup](screenshots/screenshot-headerbar.png)
