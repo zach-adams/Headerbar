@@ -44,11 +44,17 @@ Here is complete tutorial of Firefox GNOME integration
     #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
         padding: 3px 3px 6px 3px !important;
     }
+    
+    #main-window:not([customize-entered]):not([sizemode="normal"])[inFullscreen="true"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
+    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"][inFullscreen="true"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
+        padding: 6px 3px 6px 3px !important;
+    }
 
     #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #urlbar,
     #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #urlbar {
         margin: 0 36px !important;
     }
+
 }
 ```
 
