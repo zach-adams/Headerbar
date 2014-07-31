@@ -2,12 +2,12 @@
 
 Here is complete tutorial of Firefox GNOME integration
 
-1. Essential
+1. Basic
 
  * [GNOME theme](https://addons.mozilla.org/firefox/addon/adwaita/)
  * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - native desktop notifications
 
-![Screenshot with essential setup](screenshots/screenshot-essential.png)
+![Screenshot with basic setup](screenshots/screenshot-basic.png)
 
 2. Complete
 
