@@ -2,62 +2,27 @@
 
 Here is complete tutorial of Firefox GNOME integration
 
-1. Install all software from this list(don't restart after installing each one):
- * [GNOME 3 theme for Firefox](https://addons.mozilla.org/firefox/addon/adwaita/)
- * [GNOME 3 Theme Tweak extension](https://addons.mozilla.org/firefox/addon/gnome-theme-tweak/)
- * [Hide Tab Bar With One Tab](https://addons.mozilla.org/en-US/firefox/addon/hide-tab-bar-with-one-tab/)
- * [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) - for hiding titlebar
- * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - for native notifications
- * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) - for applying userstyle below
- * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/)(optionally) - for hiding unnecessary items in the bookmarks menu
- * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/)(incomplete) - for dark theme (needs [beta vesion of GNOME 3 theme for Firefox](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases/))
+1. Essential
 
-2. Restart your browser, go to <code>about:addons</code>, find GNOME Theme Tweak options and enable options you like, find HTitle options and select hide titlebar "Always" option
+ * [GNOME theme](https://addons.mozilla.org/firefox/addon/adwaita/)
+ * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - native desktop notifications
 
-![Screenshot of Theme Tweak options](Theme Tweak.png)
+![Screenshot with essential setup](screenshots/screenshot-essential.png)
 
-3. Go to "User Styles" section of <code>about:addons</code>, select "Write New Style" button, pick a name and paste userstyle below, then click "Save" button.
-```css
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+2. Complete
 
-@-moz-document url("chrome://browser/content/browser.xul") {
+ * [GNOME Theme Tweak](https://addons.mozilla.org/firefox/addon/gnome-theme-tweak/) - additional theme options
+ * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/) - hide unnecessary items in the bookmarks menu
+ * [Hide Tab Bar With One Tab](https://addons.mozilla.org/firefox/addon/hide-tab-bar-with-one-tab/) - don't forget to move "new tab" button to the navigation bar
+ * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/) - enable dark theme variant(currently works exclusively better with [GNOME theme 31.1b3](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases/+download/gnome-firefox-31.1b3.xpi))
 
-    :-moz-any(
-        #main-window[htitlemode="always"],
-        #main-window:not([sizemode="normal"])[htitlemode="auto"],
-        #main-window:not([sizemode="normal"])[htitlemode="legacy"]
-    ) #toolbar-menubar:not(:-moz-lwtheme) {
-        -moz-appearance: none;
-    }
+![Screenshot with recommended setup](screenshots/screenshot-complete.png)
 
-    #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme),
-    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) {
-        background-image: linear-gradient(to bottom, #ffffff, #ededed 37px);
-    }
+3. Headerbar
 
-    #main-window[darkwdec="true"]:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme),
-    #main-window[darkwdec="true"]:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme){
-        background-image: linear-gradient(to bottom, #4e5a5a, #363b3b 37px);
-    }
+ * [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) - hide window titlebar
+ * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) and this [userstyle](https://userstyles.org/styles/91417/)
+ * Select "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if this folder does not exist - create it
+ * Switch window theme to "Headerbar"(GNOME 3.x-alike) or "Headerbar-new"(GNOME 3.1x-alike) using GNOME Tweak Tool
 
-    #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
-    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
-        padding: 3px 3px 6px 3px !important;
-    }
-    
-    #main-window:not([customize-entered]):not([sizemode="normal"])[inFullscreen="true"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar,
-    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"][inFullscreen="true"] #navigator-toolbox:not(:-moz-lwtheme) #nav-bar {
-        padding: 6px 3px 6px 3px !important;
-    }
-
-    #main-window:not([customize-entered]):not([sizemode="normal"]) #navigator-toolbox:not(:-moz-lwtheme) #urlbar,
-    #main-window:not([customize-entered])[sizemode="normal"][htitlemode="always"] #navigator-toolbox:not(:-moz-lwtheme) #urlbar {
-        margin: 0 36px !important;
-    }
-
-}
-```
-
-4. Press "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if this folder does not exist - create it
-
-5. Switch window theme to "Headerbar"(GNOME 3.x-alike) or "Headerbar-new"(GNOME 3.1x-alike) using GNOME Tweak Tool
+![Screenshot with advanced setup](screenshots/screenshot-headerbar.png)
