@@ -15,7 +15,7 @@ Here is complete tutorial of Firefox GNOME integration
  * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/) - hide unnecessary items in the bookmarks menu
  * [Hide Tab Bar With One Tab](https://addons.mozilla.org/firefox/addon/hide-tab-bar-with-one-tab/) - don't forget to move "new tab" button to the navigation bar
  * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/) - enable dark theme variant(works with [GNOME theme 31.1b4+](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases/))
- * Change ```extensions.gnome-theme-tweak.dark-variant``` key on about:config page to "1" or "2" (for bright and dark gtk themes)
+ * Change ```extensions.gnome-theme-tweak.dark-variant``` key on about:config page to "0" or "1" (for bright and dark gtk themes)
 ![Screenshot with recommended setup](screenshots/screenshot-complete.png)
 
 ## Headerbar
