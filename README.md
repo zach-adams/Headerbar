@@ -1,29 +1,71 @@
-# Headerbar for Firefox
+# Firefox GNOME Tutorial
 
-Here is complete tutorial of Firefox GNOME integration
+This tutorial will help you to better integrate Firefox with GNOME
 
-## Basic
+## Step 1
 
- * [GNOME theme](https://addons.mozilla.org/firefox/addon/adwaita/)
- * [GNotifier](https://addons.mozilla.org/firefox/addon/gnotifier/) - native desktop notifications
+[Install extension that enables system notifications](https://addons.mozilla.org/firefox/addon/gnotifier/) instead of pop-up windows
 
-![Screenshot with basic setup](screenshots/screenshot-basic.png)
+[Install theme](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases) that matches your Firefox version (newer are on top)
 
-## Complete
+ * Restart Firefox
+ * Open Firefox menu and select `Customize...` and go to `GNOME Tweaks` in bottom left
+ * Check `Relief buttons on navigation toolbar` and `Disable animation of popups`
+ * Select `Maximum tab width: Stretch`
 
- * [GNOME Theme Tweak](https://addons.mozilla.org/firefox/addon/gnome-theme-tweak/) - additional theme options
- * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/) - hide unnecessary items in the bookmarks menu
- * [Hide Tab Bar With One Tab](https://addons.mozilla.org/firefox/addon/hide-tab-bar-with-one-tab/) - don't forget to move "new tab" button to the navigation bar
- * [DarkWDec](https://addons.mozilla.org/firefox/addon/darkwdec/) - enable dark theme variant(works with [GNOME theme 31.1b4+](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases/))
- * Change ```extensions.gnome-theme-tweak.dark-variant``` key on about:config page to "0" or "1" (for bright and dark gtk themes)
+![Screenshot](screenshots/1.png)
 
-![Screenshot with recommended setup](screenshots/screenshot-complete.png)
+## Step 2
 
-## Headerbar
+[Install extension that hides tabs](https://addons.mozilla.org/firefox/addon/hide-tab-bar-with-one-tab/) if there is only one tab, so saves vertical space of your screen
 
- * [HTitle](https://addons.mozilla.org/firefox/addon/htitle/) - hide window titlebar
- * [Stylish](https://addons.mozilla.org/firefox/addon/stylish/) and this [userstyle](https://userstyles.org/styles/91417/)
- * Select "Download ZIP" on the right of this page, copy "Headerbar" and "Headerbar-new" theme folders from downloaded archive into <code>~/.local/share/themes/</code> - if folder does not exist - create it
- * Switch window theme to "Headerbar"(GNOME 3.x-alike) or "Headerbar-new"(GNOME 3.1x-alike) using GNOME Tweak Tool
+ * Open Firefox menu and select `Customize...`
+ * Move New Tab button to the toolbar
 
-![Screenshot with advanced setup](screenshots/screenshot-headerbar.png)
+![Screenshot](screenshots/2.png)
+
+## Step 3
+
+[Install extension that hides titlebar](https://addons.mozilla.org/firefox/addon/htitle/) and puts window controls in toolbar
+
+ * Open Firefox menu and select `Add-ons`, find HTitle preferences
+ * Select `Hide titlebar: Always`
+
+![Screenshot](screenshots/3.png)
+
+## Step 4
+
+[Install extension to apply custom styles](https://addons.mozilla.org/firefox/addon/stylish/)
+
+If you want decoration theme that works with GNOME 3.12 or less, just replace `3.14` in commands below with `3.12` or use alternate methods
+
+ * Restart Firefox
+ * Download window decoration theme and place it in standard directory for themes using command line:
+
+ $ `wget -P ~/.local/share/themes/3.14/metacity-1 https://raw.githubusercontent.com/chpii/Headerbar/master/3.14/metacity-1/metacity-theme-3.xml`
+
+  * alternatively [download ZIP](https://github.com/chpii/Headerbar/archive/master.zip) and copy needed theme folder in `~/.local/share/themes`
+
+ * Switch to installed window decoration theme using command line:
+
+ $ `gsettings set org.gnome.desktop.wm.preferences theme "3.14"`
+
+  * alternatively use GNOME Tweak Tool
+
+ * Install [userstyle that improves paddings](https://userstyles.org/styles/91417/)
+
+![Screenshot](screenshots/4.png)
+
+## Dark theme
+
+ * [Install dark window decoration extension](https://addons.mozilla.org/firefox/addon/darkwdec/)
+ * Enter `about:config` in adress field to access advanced preferences 
+ * Change `extensions.gnome-theme-tweak.dark-variant` key to `1` to switch dark theme on
+
+![Screenshot](screenshots/dark.png)
+
+## Other useful extensions
+
+ * [GNOME Keyring integration](https://addons.mozilla.org/firefox/addon/gnome-keyring-integration-1/)
+ * [Hide Sync in Menu](https://addons.mozilla.org/firefox/addon/hide-sync-in-menu/)
+ * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/)
