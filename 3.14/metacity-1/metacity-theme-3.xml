@@ -170,6 +170,12 @@
 	</gradient>
 </draw_ops>
 
+<draw_ops name="titlebar_extent_fill_focused">
+	<gradient type="vertical" x="0" y="0" width="width" height="10">
+		<color value="gtk:custom(wm_bg_a,blend/gtk:bg[NORMAL]/gtk:base[NORMAL]/0.4)" />
+		<color value="gtk:custom(wm_bg_b,gtk:bg[NORMAL])" />
+	</gradient>
+</draw_ops>
 
 <draw_ops name="titlebar_fill_unfocused">
 	<rectangle color="C_titlebar_unfocused" x="0" y="0" width="width" height="height" filled="true" />
@@ -192,6 +198,11 @@
 
 <draw_ops name="rounded_titlebar_focused">
 	<include name="titlebar_fill_focused" />
+	<include name="rounded_hilight" />
+</draw_ops>
+
+<draw_ops name="rounded_titlebar_extent_focused">
+	<include name="titlebar_extent_fill_focused" />
 	<include name="rounded_hilight" />
 </draw_ops>
 
@@ -1316,7 +1327,7 @@
 
 <frame_style name="border_focused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
-	<piece position="titlebar" draw_ops="rounded_hilight" />
+	<piece position="titlebar" draw_ops="rounded_titlebar_extent_focused" />
 	<piece position="overlay" draw_ops="rounded_border_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
@@ -1344,7 +1355,7 @@
 
 <frame_style name="border_unfocused" geometry="border">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
-	<piece position="titlebar" draw_ops="rounded_hilight" />
+	<piece position="titlebar" draw_ops="rounded_titlebar_unfocused" />
 	<piece position="overlay" draw_ops="rounded_border_unfocused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
@@ -1372,6 +1383,7 @@
 
 <frame_style name="borderless_focused" geometry="borderless">
 	<piece position="entire_background" draw_ops="entire_background_focused" />
+	<piece position="titlebar" draw_ops="titlebar_extent_fill_focused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
@@ -1398,6 +1410,8 @@
 
 <frame_style name="borderless_unfocused" geometry="borderless">
 	<piece position="entire_background" draw_ops="entire_background_unfocused" />
+	<piece position="titlebar" draw_ops="titlebar_unfocused" />
+	<piece position="title" draw_ops="title_unfocused" />
 	<button function="close" state="normal"><draw_ops></draw_ops></button>
 	<button function="close" state="pressed"><draw_ops></draw_ops></button>
 	<button function="maximize" state="normal"><draw_ops></draw_ops></button>
