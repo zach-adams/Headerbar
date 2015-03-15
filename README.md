@@ -37,6 +37,8 @@ This tutorial will help you to better integrate Firefox with GNOME
 
 [Install extension to apply custom styles](https://addons.mozilla.org/firefox/addon/stylish/)
 
+GNOME 3.16+ does not use Metacity, so you can now go to [Step 5](https://github.com/chpii/Headerbar#step-5)
+
 If you want decoration theme that works with GNOME 3.12 or less, just replace `3.14` in commands below with `3.12` or use alternate methods
 
  * Restart Firefox
@@ -52,7 +54,12 @@ If you want decoration theme that works with GNOME 3.12 or less, just replace `3
 
   * alternatively use GNOME Tweak Tool
 
- * Install [userstyle that improves paddings](https://userstyles.org/styles/91417/)
+## Step 4
+
+Install userstyle that improves paddings and make it look like other GNOME applications
+
+ * [Headerbar style for GNOME 3.14-](https://userstyles.org/styles/91417)
+ * [Headerbar style for GNOME 3.16+](https://userstyles.org/styles/96733)
 
 ![Screenshot](screenshots/4.png)
 
