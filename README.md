@@ -54,7 +54,7 @@ If you want decoration theme that works with GNOME 3.12 or less, just replace `3
 
   * alternatively use GNOME Tweak Tool
 
-## Step 4
+## Step 5
 
 Install userstyle that improves paddings and make it look like other GNOME applications
 
