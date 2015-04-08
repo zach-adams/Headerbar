@@ -9,9 +9,12 @@ This tutorial will help you to better integrate Firefox with GNOME
 [Install theme](https://launchpad.net/gnome-integration/firefox-gnome/firefox-gnome-releases) that matches your Firefox version (newer are on top)
 
  * Restart Firefox
- * Open Firefox menu and select `Customize...` and go to `GNOME Tweaks` in bottom left
- * Check `Relief buttons on navigation toolbar` and `Disable animation of popups`
- * Select `Maximum tab width: Stretch`
+ * Open Firefox menu and select `Customize...`
+ * go to `GNOME Tweaks` in bottom left
+ * check `Relief buttons on navigation toolbar`
+ * check `Bold tab label`
+ * set `Maximum tab width` to `Stretch`
+ * check `Hide the history dropmarker in the URL bar`
 
 ![Screenshot](screenshots/1.png)
 
