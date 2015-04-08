@@ -76,6 +76,7 @@ Install userstyle that improves paddings and make it look like other GNOME appli
 
 ## Other useful extensions
 
+ * [Australis menu List view](https://userstyles.org/styles/97314)
  * [GNOME Keyring integration](https://addons.mozilla.org/firefox/addon/gnome-keyring-integration-1/)
  * [Hide Sync in Menu](https://addons.mozilla.org/firefox/addon/hide-sync-in-menu/)
  * [Simple bookmarks menu](https://addons.mozilla.org/firefox/addon/simple-bookmarks-menu/)
