@@ -24,6 +24,11 @@ This tutorial will help you to better integrate Firefox with GNOME
 
  * Open Firefox menu and select `Customize...`
  * Move New Tab button to the toolbar
+ * Go to `about:config` and change `browser.tabs.animate` to `false` to make closing the last tab instant.
+ 
+ This avoids arrows appearing while closing last tab:
+
+ ![Screenshot](https://cloud.githubusercontent.com/assets/6687927/7333664/5fe318a4-eb3d-11e4-81d4-5e244c2bdb4f.png)
 
 ![Screenshot](screenshots/2.png)
 
