@@ -68,6 +68,7 @@ Install userstyle that improves paddings and make it look like other GNOME appli
 
  * [Headerbar style for GNOME 3.14-](https://userstyles.org/styles/91417)
  * [Headerbar style for GNOME 3.16+](https://userstyles.org/styles/96733)
+ * [GNOME styled menu List view](https://userstyles.org/styles/115022)
 
 ![Screenshot](screenshots/4.png)
 
